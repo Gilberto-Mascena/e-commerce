@@ -10,6 +10,8 @@ import java.util.Objects;
 /**
  * Representa um produto disponível no sistema de e-commerce.
  * Esta entidade contém informações básicas como nome, descrição, preço, estoque e categoria.
+ *
+ * @author Gilberto Dev
  */
 @Entity
 @Table(name = "tb_produto")
@@ -35,8 +37,8 @@ public class Produto implements Serializable {
      * Descrição do produto. Deve ter entre 3 e 100 caracteres.
      */
     @NotBlank(message = "Descrição é obrigatório")
-    @Size(min = 3, max = 100, message = "Descrição deve ter entre 3 e 100 caracteres")
-    @Column(nullable = false, length = 100)
+    @Size(min = 3, max = 255, message = "Descrição deve ter entre 3 e 255 caracteres")
+    @Column(nullable = false, length = 255)
     private String descricao;
 
     /**
