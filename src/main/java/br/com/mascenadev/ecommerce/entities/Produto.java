@@ -91,7 +91,7 @@ public class Produto implements Serializable {
     /**
      * Obtém o ID do produto.
      *
-     * @return ID do produto
+     * @return o ID
      */
     public Long getId() {
         return id;
@@ -100,7 +100,7 @@ public class Produto implements Serializable {
     /**
      * Define o ID do produto.
      *
-     * @param id novo ID
+     * @param id o novo ID
      */
     public void setId(Long id) {
         this.id = id;
@@ -109,7 +109,7 @@ public class Produto implements Serializable {
     /**
      * Obtém o nome do produto.
      *
-     * @return Nome
+     * @return o nome
      */
     public String getNome() {
         return nome;
@@ -118,7 +118,7 @@ public class Produto implements Serializable {
     /**
      * Define o nome do produto.
      *
-     * @param nome Novo Nome
+     * @param nome o novo nome
      */
     public void setNome(String nome) {
         this.nome = nome;
@@ -127,7 +127,7 @@ public class Produto implements Serializable {
     /**
      * Obtém a descrição do produto.
      *
-     * @return Descrição
+     * @return a descrição
      */
     public String getDescricao() {
         return descricao;
@@ -136,7 +136,7 @@ public class Produto implements Serializable {
     /**
      * Define a descrição do produto.
      *
-     * @param descricao Nova descrição
+     * @param descricao a nova descrição
      */
     public void setDescricao(String descricao) {
         this.descricao = descricao;
@@ -145,7 +145,7 @@ public class Produto implements Serializable {
     /**
      * Obtém o preço do produto.
      *
-     * @return Preço
+     * @return o preço
      */
     public BigDecimal getPreco() {
         return preco;
@@ -154,43 +154,43 @@ public class Produto implements Serializable {
     /**
      * Define o preço do produto.
      *
-     * @param preco Novo preço
+     * @param preco o novo preço
      */
     public void setPreco(BigDecimal preco) {
         this.preco = preco;
     }
 
     /**
-     * Obtém a quantidade do estoque.
+     * Obtém o estoque do produto.
      *
-     * @return Estoque
+     * @return o estoque
      */
     public Integer getEstoque() {
         return estoque;
     }
 
     /**
-     * Define a quantidade do estoque.
+     * Define o estoque do produto.
      *
-     * @param estoque Novo estoque
+     * @param estoque o novo estoque
      */
     public void setEstoque(Integer estoque) {
         this.estoque = estoque;
     }
 
     /**
-     * Obtém a categoria.
+     * Obtém a categoria do produto.
      *
-     * @return Categoria
+     * @return a categoria
      */
     public String getCategoria() {
         return categoria;
     }
 
     /**
-     * Define a categoria.
+     * Define a categoria do produto.
      *
-     * @param categoria Nova categoria
+     * @param categoria a nova categoria
      */
     public void setCategoria(String categoria) {
         this.categoria = categoria;
