@@ -158,6 +158,11 @@ public class ProdutoRequestDTO {
         return produto;
     }
 
+    /**
+     * Retorna uma representação em string do objeto Produto.
+     *
+     * @return string contendo os dados do produto
+     */
     @Override
     public String toString() {
         return "ProdutoRequestDTO{" +
