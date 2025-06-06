@@ -65,9 +65,9 @@ public class Produto implements Serializable {
     @Column(nullable = false, length = 30)
     private String categoria;
 
-    /**
-     * Construtor padrão.
-     */
+        /**
+         * Construtor padrão.
+         */
     public Produto() {
     }
 
