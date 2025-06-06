@@ -207,16 +207,16 @@ public class Produto implements Serializable {
         return Objects.equals(id, produto.id);
     }
 
-    /**
-     * Retorna uma representação em string do objeto Produto.
-     *
-     * @return string contendo os dados do produto
-     */
     @Override
     public int hashCode() {
         return Objects.hashCode(id);
     }
 
+    /**
+     * Retorna uma representação em string do objeto Produto.
+     *
+     * @return string contendo os dados do produto
+     */
     @Override
     public String toString() {
         return "Produto{" +
