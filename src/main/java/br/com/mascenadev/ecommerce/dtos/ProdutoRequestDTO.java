@@ -67,30 +67,12 @@ public class ProdutoRequestDTO {
     }
 
     /**
-     * Define o nome do produto.
-     *
-     * @param nome o novo nome do produto
-     */
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    /**
      * Obtém a descrição do produto.
      *
      * @return descrição do produto
      */
     public String getDescricao() {
         return descricao;
-    }
-
-    /**
-     * Define a descrição do produto.
-     *
-     * @param descricao a nova descrição do produto
-     */
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
     }
 
     /**
@@ -103,15 +85,6 @@ public class ProdutoRequestDTO {
     }
 
     /**
-     * Define o preço do produto.
-     *
-     * @param preco o novo preço do produto
-     */
-    public void setPreco(BigDecimal preco) {
-        this.preco = preco;
-    }
-
-    /**
      * Obtém o estoque do produto.
      *
      * @return o estoque do produto
@@ -121,30 +94,12 @@ public class ProdutoRequestDTO {
     }
 
     /**
-     * Define o estoque do produto.
-     *
-     * @param estoque o novo estoque do produto
-     */
-    public void setEstoque(Integer estoque) {
-        this.estoque = estoque;
-    }
-
-    /**
      * Obtém a categoria do produto.
      *
      * @return a categoria do produto
      */
     public String getCategoria() {
         return categoria;
-    }
-
-    /**
-     * Define a categoria do produto.
-     *
-     * @param categoria a nova categoria
-     */
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
     }
 
     /**
