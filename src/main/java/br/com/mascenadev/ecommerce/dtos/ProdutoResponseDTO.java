@@ -25,9 +25,10 @@ public class ProdutoResponseDTO {
     private final String categoria;
 
     /**
-     * Construtor que inicializa o DTO com os dados da entidade Produto.
+     * Constrói um DTO com base em um {@link Produto} não nulo.
      *
-     * @param entity instância da entidade {@link Produto}
+     * @param entity entidade Produto com os dados
+     * @throws NullPointerException se a entidade for nula
      */
     public ProdutoResponseDTO(Produto entity) {
         this.id = entity.getId();
@@ -96,12 +97,13 @@ public class ProdutoResponseDTO {
      * Converte uma lista de entidades {@link Produto} em uma lista de {@link ProdutoResponseDTO}.
      *
      * @param produtos lista de entidades Produto
-     * @return lista de DTOs ProdutoResponseDTO
+     * @return lista de DTOs ProdutoResponseDTO ou uma lista vazia se a entrada for nula
      */
     public static List<ProdutoResponseDTO> fromEntityList(List<Produto> produtos) {
-        return produtos.stream()
-                .map(ProdutoResponseDTO::new)
-                .toList();
+        return produtos == null ? List.of() :
+                produtos.stream()
+                        .map(ProdutoResponseDTO::new)
+                        .toList();
     }
 
     /**
