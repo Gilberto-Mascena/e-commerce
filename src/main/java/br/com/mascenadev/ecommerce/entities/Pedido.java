@@ -138,7 +138,7 @@ public class Pedido {
      * @param itens itens a serem atribuídos ao pedido
      */
     public void setItens(Set<ItemPedido> itens) {
-        this.itens = itens;
+        this.itens = (itens != null) ? itens : new HashSet<>();
     }
 
     /**
