@@ -31,6 +31,7 @@ public class ProdutoResponseDTO {
      * @throws NullPointerException se a entidade for nula
      */
     public ProdutoResponseDTO(Produto entity) {
+        Objects.requireNonNull(entity, "Produto não pode ser nulo");
         this.id = entity.getId();
         this.nome = entity.getNome();
         this.descricao = entity.getDescricao();
@@ -96,8 +97,8 @@ public class ProdutoResponseDTO {
     /**
      * Converte uma lista de entidades {@link Produto} em uma lista de {@link ProdutoResponseDTO}.
      *
-     * @param produtos lista de entidades Produto
-     * @return lista de DTOs ProdutoResponseDTO ou uma lista vazia se a entrada for nula
+     * @param produtos lista de entidades Produto (pode ser nula)
+     * @return lista de DTOs ProdutoResponseDTO (nunca nula)
      */
     public static List<ProdutoResponseDTO> fromEntityList(List<Produto> produtos) {
         return produtos == null ? List.of() :
