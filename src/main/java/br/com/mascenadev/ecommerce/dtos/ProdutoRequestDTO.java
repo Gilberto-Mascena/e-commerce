@@ -159,6 +159,18 @@ public class ProdutoRequestDTO {
     }
 
     /**
+     * Cria um DTO de requisição a partir de uma entidade Produto.
+     *
+     * @param produto entidade Produto
+     * @return instância preenchida de ProdutoRequestDTO
+     */
+    public static ProdutoRequestDTO fromEntity(Produto produto) {
+        ProdutoRequestDTO dto = new ProdutoRequestDTO();
+        BeanUtils.copyProperties(produto, dto);
+        return dto;
+    }
+
+    /**
      * Retorna uma representação em string do objeto Produto.
      *
      * @return string contendo os dados do produto
