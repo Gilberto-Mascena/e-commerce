@@ -1,1 +1,15 @@
-spring.application.name=e-commerce
+# Profile configuration for the application
+
+spring:
+  profiles:
+    active: ${APPLICATION_PROFILE:test}
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+    logging:
+    level:
+      org:hibernate: ERROR
+
